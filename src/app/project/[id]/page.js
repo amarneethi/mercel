@@ -1137,7 +1137,7 @@ export default function ProjectPage({ params }) {
       />
 
       {/* Project sub-header */}
-      <div className="border-b border-[var(--ds-border-primary)] bg-[var(--ds-bg-primary)]">
+      <div className="bg-[var(--ds-bg-primary)]">
         <div className="max-w-6xl mx-auto px-6 pt-4 pb-0">
           {/* Breadcrumb + actions */}
           <div className="flex items-center justify-between mb-4">
@@ -1169,8 +1169,8 @@ export default function ProjectPage({ params }) {
             items={tabs.map(t => ({ value: t.value, label: t.label }))}
             value={activeTab}
             onChange={setActiveTab}
-            variant="underline"
             size="md"
+            variant="pill"
           />
         </div>
       </div>
