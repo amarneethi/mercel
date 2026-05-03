@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import {
   Button, Tag, DataTable, Dropdown, Select, Search,
   Pagination, OverflowMenu, DatePicker,
@@ -38,15 +39,17 @@ export default function DeploymentsTab({ project }) {
       key: 'id',
       header: 'DEPLOYMENT',
       render: (val, row) => (
-        <div>
-          <div className="flex items-center gap-2">
-            <code className="text-sm font-medium text-[var(--ds-text-brand)]">{val.replace('dpl_', '')}</code>
-            {row.isCurrent && <Tag intent="info" size="sm">Current</Tag>}
+        <Link href={`/project/${project.id}/deployment/${val}`}>
+          <div className="cursor-pointer hover:opacity-80">
+            <div className="flex items-center gap-2">
+              <code className="text-sm font-medium text-[var(--ds-text-brand)]">{val.replace('dpl_', '')}</code>
+              {row.isCurrent && <Tag intent="info" size="sm">Current</Tag>}
+            </div>
+            <div className="flex items-center gap-1 mt-0.5">
+              <Tag intent="default" size="sm">{row.environment}</Tag>
+            </div>
           </div>
-          <div className="flex items-center gap-1 mt-0.5">
-            <Tag intent="default" size="sm">{row.environment}</Tag>
-          </div>
-        </div>
+        </Link>
       ),
     },
     {

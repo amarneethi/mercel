@@ -1,3 +1,35 @@
+export const deploymentDetails = {
+  'dpl_a8f3c2d': {
+    region: 'iad1 (Washington D.C.)',
+    nodeVersion: '20.x',
+    createdAt: 'May 3, 2026, 2:41 PM',
+    buildSteps: [
+      { key: 'clone', label: 'Clone', duration: '3s', icon: 'git-pull-request' },
+      { key: 'install', label: 'Install', duration: '12s', icon: 'package' },
+      { key: 'build', label: 'Build', duration: '22s', icon: 'hammer' },
+      { key: 'deploy', label: 'Deploy', duration: '8s', icon: 'rocket', active: true },
+    ],
+    buildLogs: [
+      '$ npm run build',
+      '> nextjs-blog@0.1.0 build',
+      '> next build',
+      'Next.js 15.1.0',
+      'Creating an optimized production build...',
+      '✓ Compiled successfully',
+      '✓ Linting and checking validity of types',
+      '✓ Collecting page data',
+      '✓ Generating static pages (12/12)',
+      '✓ Finalizing page optimization',
+      'Build completed in 22.3s',
+      'Deployment assigned: nextjs-blog-a8f3c2d.mercel.app',
+    ],
+    domains: [
+      { url: 'nextjs-blog.mercel.app', badge: 'Primary' },
+      { url: 'nextjs-blog-a8f3c2d.mercel.app', badge: 'Auto' },
+    ],
+  },
+};
+
 export const deploymentsByProject = {
   'nextjs-blog': [
     { id: 'dpl_a8f3c2d', url: 'nextjs-blog-a8f3c2d.mercel.app', branch: 'main', status: 'ready', commitHash: 'a8f3c2d', commitMessage: 'Fix navbar responsive layout', author: 'asmobbin', duration: '45s', deployedAt: '2h ago', environment: 'Production', isCurrent: true },
