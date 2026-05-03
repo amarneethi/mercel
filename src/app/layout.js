@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'IT Admin Portal',
-  description: 'Asset tracking and employee onboarding',
+  title: 'Mercel',
+  description: 'Deploy, scale, and ship frontend apps',
 };
 
 export default function RootLayout({ children }) {

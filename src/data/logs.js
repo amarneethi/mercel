@@ -1,0 +1,12 @@
+export const logEntries = [
+  { id: 1, time: '10:55:40', status: 200, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /', message: 'Request processed successfully', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'HIT' },
+  { id: 2, time: '10:54:21', status: 200, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /favicon.ico', message: 'Static asset served', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'HIT' },
+  { id: 3, time: '10:53:05', status: 404, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /api/missing', message: 'Route not found', level: 'warning', environment: 'Production', requestMethod: 'GET', cache: 'MISS' },
+  { id: 4, time: '10:52:18', status: 200, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /about', message: 'Request processed successfully', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'MISS' },
+  { id: 5, time: '10:51:42', status: 500, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'POST /api/contact', message: 'Unhandled exception in edge function', level: 'error', environment: 'Production', requestMethod: 'POST', cache: 'MISS' },
+  { id: 6, time: '10:50:30', status: 200, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /_next/static/chunk.js', message: 'Static asset served from cache', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'HIT' },
+  { id: 7, time: '10:49:15', status: 301, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /blog/', message: 'Redirecting to canonical URL', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'MISS' },
+  { id: 8, time: '10:48:02', status: 200, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /blog', message: 'Request processed successfully', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'HIT' },
+  { id: 9, time: '10:47:33', status: 401, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /api/protected', message: 'Unauthorized: missing bearer token', level: 'warning', environment: 'Production', requestMethod: 'GET', cache: 'MISS' },
+  { id: 10, time: '10:46:50', status: 200, host: 'sveltekit-boilerplate-khaki-ten.mercel.app', request: 'GET /pricing', message: 'Request processed successfully', level: 'info', environment: 'Production', requestMethod: 'GET', cache: 'MISS' },
+];
