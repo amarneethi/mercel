@@ -2,9 +2,9 @@
   "version": "v1",
   "packages": {
     "aopends": {
-      "signature": "15b54b2c091196444847f589204bebe9",
+      "signature": "82e0a1be9dab251791d497489c985c7f",
       "file": true,
-      "replaced": "^0.1.8"
+      "replaced": "^0.2.2"
     }
   }
 }

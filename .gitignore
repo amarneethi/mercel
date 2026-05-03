@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# yalc
+.yalc
+yalc.lock
+
+# reference
+reference
