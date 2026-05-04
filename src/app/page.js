@@ -192,7 +192,7 @@ export default function Overview() {
         productName="Alex Smith's projects"
         items={[
           { label: 'Overview', href: '/', active: true },
-          { label: 'Integrations', href: '#' },
+          { label: 'Integrations', href: '/integrations' },
           { label: 'Activity', href: '#' },
           { label: 'Domains', href: '#' },
           { label: 'Usage', href: '#' },

@@ -10,6 +10,7 @@ import {
 import { projects } from '@/data/projects';
 import ProjectTab from './tabs/ProjectTab';
 import DeploymentsTab from './tabs/DeploymentsTab';
+import IntegrationsTab from './tabs/IntegrationsTab';
 import AnalyticsTab from './tabs/AnalyticsTab';
 import SpeedInsightsTab from './tabs/SpeedInsightsTab';
 import LogsTab from './tabs/LogsTab';
@@ -32,6 +33,7 @@ export default function ProjectPage({ params }) {
   const tabs = [
     { value: 'project', label: 'Project', content: <ProjectTab project={project} /> },
     { value: 'deployments', label: 'Deployments', content: <DeploymentsTab project={project} /> },
+    { value: 'integrations', label: 'Integrations', content: <IntegrationsTab project={project} /> },
     { value: 'analytics', label: 'Analytics', content: <AnalyticsTab project={project} /> },
     { value: 'speed-insights', label: 'Speed Insights', content: <SpeedInsightsTab project={project} /> },
     { value: 'logs', label: 'Logs', content: <LogsTab project={project} /> },
