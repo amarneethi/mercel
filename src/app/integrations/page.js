@@ -211,7 +211,7 @@ export default function IntegrationsPage() {
         items={[
           { label: 'Overview', href: '/' },
           { label: 'Integrations', href: '/integrations', active: true },
-          { label: 'Activity', href: '#' },
+          { label: 'Activity', href: '/activity' },
           { label: 'Domains', href: '#' },
           { label: 'Usage', href: '#' },
           { label: 'Monitoring', href: '#' },

@@ -193,7 +193,7 @@ export default function Overview() {
         items={[
           { label: 'Overview', href: '/', active: true },
           { label: 'Integrations', href: '/integrations' },
-          { label: 'Activity', href: '#' },
+          { label: 'Activity', href: '/activity' },
           { label: 'Domains', href: '#' },
           { label: 'Usage', href: '#' },
           { label: 'Monitoring', href: '#' },

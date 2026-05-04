@@ -106,6 +106,8 @@ A `<div>` tag. Used for containers, cards, bars, buttons, dividers, backgrounds 
 ></div>
 ```
 
+**Border usage rule:** Default all rectangles to `border-none`. Only apply `border border-solid border-black` when the border serves a deliberate wireframe purpose — e.g. input fields, cards that need visual separation, buttons, or explicit containers. Avoid decorative or structural borders. If the rectangle is purely for layout/spacing and doesn't need a visible border, use `border-none` to omit it.
+
 **Valid class reference:**
 
 | Property           | Tailwind Class Options                                                                                       |
@@ -120,8 +122,8 @@ A `<div>` tag. Used for containers, cards, bars, buttons, dividers, backgrounds 
 | `padding`          | `p-{token}` (see token table) — or inline `style` with only `px` for non-token values                        |
 | `flex-wrap`        | `flex-nowrap` · `flex-wrap`                                                                                  |
 | `overflow`         | `overflow-visible` · `overflow-hidden` · `overflow-scroll` · `overflow-auto`                                 |
-| `border-width`     | `border` (1px) (always)                                                                                      |
-| `border-style`     | `border-solid` (always)                                                                                      |
+| `border-width`     | `border` (1px) — only when intentional (see border usage rule above)                                         |
+| `border-style`     | `border-solid` (always, when border is used)                                                                 |
 | `position`         | `relative` · `absolute`                                                                                      |
 | `flex-grow`        | `grow-0` · `grow-1`                                                                                          |
 | `flex-shrink`      | `shrink-0` · `shrink-1`                                                                                      |
